@@ -14,11 +14,13 @@
     "bootstrap": "^4.0.0-beta",
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.10",
+    "fs": "^0.0.1-security",
     "jquery": "^3.1.1",
     "laravel-mix": "^1.0",
     "lodash": "^4.17.4",
     "pace-js": "^1.0.2",
     "popper.js": "^1.12.9",
+    "postcss-loader": "^2.1.1",
     "vue": "^2.1.10"
   },
   "dependencies": {
