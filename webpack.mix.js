@@ -11,8 +11,14 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.js('resources/assets/js/app.js', 'public/js/app.js')
+    .extract(['lodash', 'jquery', 'axios', 'alertifyjs', 'popper.js'], 'public/js/vendor.js')
+    .autoload({
+        jquery: ['$', 'jQuery', 'window.jQuery']
+    });
+
+mix.sass('resources/assets/sass/app.scss', 'public/css/app.css')
+   .sass('resources/assets/sass/vendor.scss', 'public/css/vendor.css');
 mix.sass('resources/assets/sass/pages/pages.scss', 'public/css')
    .options({
         processCssUrls: false

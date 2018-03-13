@@ -39,24 +39,20 @@ if (token) {
 }
 
 /**
- * Echo exposes an expressive API for subscribing to channels and listening
- * for events that are broadcast by Laravel. Echo and event broadcasting
- * allows your team to easily build robust real-time web applications.
- */
-
-// import Echo from 'laravel-echo'
-
-// window.Pusher = require('pusher-js');
-
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: 'your-pusher-key'
-// });
-
-/**
  * Font Awesome
  */
 require('@fortawesome/fontawesome');
 require('@fortawesome/fontawesome-free-solid');
 require('@fortawesome/fontawesome-free-regular');
 require('@fortawesome/fontawesome-free-brands');
+
+/**
+ * https://github.com/MohammadYounes/AlertifyJS
+ */
+window.alertify = require('alertifyjs');
+window.alertify.defaults.transition = 'slide';
+window.alertify.defaults.closable = false;
+window.alertify.defaults.closableByDimmer = false;
+window.alertify.defaults.glossary.title = '';
+window.alertify.defaults.glossary.ok = '确定';
+window.alertify.defaults.glossary.cancel = '取消';

@@ -19,7 +19,10 @@
     <meta content="" name="description" />
     <meta content="" name="author" />
 
+    <script type="text/javascript" src="{{ mix('js/manifest.js') }}"></script>
+    <script type="text/javascript" src="{{ mix('js/vendor.js') }}"></script>
     <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
+    <link rel="stylesheet" href="{{ mix('css/vendor.css') }}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" href="{{ mix('css/pages.css') }}">
 </head>
