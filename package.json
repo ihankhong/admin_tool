@@ -21,6 +21,7 @@
     "pace-js": "^1.0.2",
     "popper.js": "^1.12.9",
     "postcss-loader": "^2.1.1",
+    "resolve-url-loader": "^2.3.0",
     "vue": "^2.1.10"
   },
   "dependencies": {

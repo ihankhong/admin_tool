@@ -17,9 +17,10 @@
 
     <meta content="" name="description" />
     <meta content="" name="author" />
-    
+
     <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/pages.css') }}">
 </head>
 <body class="fixed-header">
     <!-- BEGIN SIDEBAR -->
