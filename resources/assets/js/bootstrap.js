@@ -56,3 +56,18 @@ window.alertify.defaults.closableByDimmer = false;
 window.alertify.defaults.glossary.title = '';
 window.alertify.defaults.glossary.ok = '确定';
 window.alertify.defaults.glossary.cancel = '取消';
+
+/**
+ * https://github.com/gromo/jquery.scrollbar
+ */
+require('jquery.scrollbar');
+
+/**
+ * https://github.com/Modernizr/Modernizr
+ */
+require("modernizr");
+
+require("modernizr-loader");
+// window.Modernizr.build({}, function (result) {
+//   console.log(result); // the build
+// });

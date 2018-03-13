@@ -1,17 +1,29 @@
-webpackJsonp([1],{
-
-/***/ 13:
+webpackJsonp([1],[
+/* 0 */,
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(14);
-__webpack_require__(41);
-__webpack_require__(42);
-module.exports = __webpack_require__(43);
+__webpack_require__(15);
+__webpack_require__(44);
+__webpack_require__(45);
+module.exports = __webpack_require__(46);
 
 
 /***/ }),
-
-/***/ 14:
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -21,11 +33,10 @@ module.exports = __webpack_require__(43);
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(15);
+__webpack_require__(16);
 
 /***/ }),
-
-/***/ 15:
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {
@@ -41,7 +52,7 @@ try {
   window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__(1);
   window.Popper = __webpack_require__(2);
 
-  __webpack_require__(17);
+  __webpack_require__(18);
 } catch (e) {}
 
 /**
@@ -71,10 +82,10 @@ if (token) {
 /**
  * Font Awesome
  */
-__webpack_require__(37);
 __webpack_require__(38);
 __webpack_require__(39);
 __webpack_require__(40);
+__webpack_require__(41);
 
 /**
  * https://github.com/MohammadYounes/AlertifyJS
@@ -86,11 +97,26 @@ window.alertify.defaults.closableByDimmer = false;
 window.alertify.defaults.glossary.title = '';
 window.alertify.defaults.glossary.ok = '确定';
 window.alertify.defaults.glossary.cancel = '取消';
+
+/**
+ * https://github.com/gromo/jquery.scrollbar
+ */
+__webpack_require__(13);
+
+/**
+ * https://github.com/Modernizr/Modernizr
+ */
+__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"modernizr\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+__webpack_require__(43);
+// window.Modernizr.build({}, function (result) {
+//   console.log(result); // the build
+// });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-
-/***/ 17:
+/* 17 */,
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -3990,8 +4016,26 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 
 /***/ }),
-
-/***/ 37:
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5813,8 +5857,7 @@ var config = api$1.config;
 
 
 /***/ }),
-
-/***/ 38:
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7445,8 +7488,7 @@ bunker(function () {
 
 
 /***/ }),
-
-/***/ 39:
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7925,8 +7967,7 @@ bunker(function () {
 
 
 /***/ }),
-
-/***/ 40:
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9047,26 +9088,57 @@ bunker(function () {
 
 
 /***/ }),
+/* 42 */,
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ 41:
+"use strict";
+
+
+var modernizr = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"modernizr\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+function wrapOutput(output) {
+    // Exposing Modernizr as a module.
+    return ";(function(window){\n" +
+           "var hadGlobal = 'Modernizr' in window;\n" +
+           "var oldGlobal = window.Modernizr;\n" +
+           output + "\n" +
+           "module.exports = window.Modernizr;\n" +
+           "if (hadGlobal) { window.Modernizr = oldGlobal; }\n" +
+           "else { delete window.Modernizr; }\n" +
+           "})(window);";
+}
+
+module.exports = function (config) {
+    if (typeof this.cacheable === 'function') {
+        this.cacheable();
+    }
+
+    var cb = this.async();
+
+    modernizr.build(this.exec(config, this.resource), function (output) {
+        cb(null, wrapOutput(output));
+    });
+};
+
+
+/***/ }),
+/* 44 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 42:
+/* 45 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 43:
+/* 46 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
-
-},[13]);
+],[14]);

@@ -15,10 +15,13 @@
     "bootstrap": "^4.0.0-beta",
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.10",
-    "fs": "^0.0.1-security",
     "jquery": "^3.1.1",
+    "jquery.scrollbar": "^0.2.11",
+    "json-loader": "^0.5.7",
     "laravel-mix": "^1.0",
     "lodash": "^4.17.4",
+    "modernizr": "^3.6.0",
+    "modernizr-loader": "^1.0.1",
     "pace-js": "^1.0.2",
     "popper.js": "^1.12.9",
     "postcss-loader": "^2.1.1",
@@ -29,6 +32,7 @@
     "@fortawesome/fontawesome": "^1.1.4",
     "@fortawesome/fontawesome-free-brands": "^5.0.8",
     "@fortawesome/fontawesome-free-regular": "^5.0.8",
-    "@fortawesome/fontawesome-free-solid": "^5.0.8"
+    "@fortawesome/fontawesome-free-solid": "^5.0.8",
+    "fs": "^0.0.1-security"
   }
 }
