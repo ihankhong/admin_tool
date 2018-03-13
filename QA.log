@@ -1,0 +1,4 @@
+1。mix pages.scss error
+A：
+    1.https://github.com/JeffreyWay/laravel-mix/issues/187
+    2.https://github.com/tailwindcss/tailwindcss/issues/48
