@@ -61,13 +61,3 @@ window.alertify.defaults.glossary.cancel = '取消';
  * https://github.com/gromo/jquery.scrollbar
  */
 require('jquery.scrollbar');
-
-/**
- * https://github.com/Modernizr/Modernizr
- */
-require("modernizr");
-
-require("modernizr-loader");
-// window.Modernizr.build({}, function (result) {
-//   console.log(result); // the build
-// });
