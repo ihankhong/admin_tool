@@ -21,11 +21,8 @@
 
     <script type="text/javascript" src="{{ mix('js/manifest.js') }}"></script>
     <script type="text/javascript" src="{{ mix('js/vendor.js') }}"></script>
-    <script type="text/javascript" src="{{ mix('js/modernizr.custom.js') }}"></script>
     <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
-    <!-- BEGIN CORE TEMPLATE JS -->
-    <script type="text/javascript" src="{{ mix('js/pages.js') }}"></script>
-    <!-- END CORE TEMPLATE JS -->
+
     <link rel="stylesheet" href="{{ mix('css/vendor.css') }}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" href="{{ mix('css/pages.css') }}">
@@ -238,7 +235,7 @@
                                 <li class="breadcrumb-item"><a href="#">Barebone</a></li>
                                 <li class="breadcrumb-item active">Layout</li>
                             </ol>
-                            <!-- END BREADCRUMB --> 
+                            <!-- END BREADCRUMB -->
                         </div>
                     </div>
                 </div>
@@ -273,5 +270,10 @@
         <!-- END PAGE CONTENT WRAPPER -->
     </div>
     <!-- END PAGE CONTAINER -->
+
+    <script type="text/javascript" src="{{ mix('js/modernizr.custom.js') }}"></script>
+    <!-- BEGIN CORE TEMPLATE JS -->
+    <script type="text/javascript" src="{{ mix('js/pages.js') }}"></script>
+    <!-- END CORE TEMPLATE JS -->
 </body>
 </html>
