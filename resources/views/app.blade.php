@@ -8,10 +8,10 @@
 
     <title>{{ config('app.name') }}</title>
 
-    <link rel="apple-touch-icon" href="{{ asset('image/app_icon/60.png') }}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('image/app_icon/76.png') }}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('image/ap_icon/120.png') }}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('image/app_icon/152.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/app_icon/60.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/app_icon/76.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/ap_icon/120.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/app_icon/152.png') }}">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -38,7 +38,7 @@
         <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
         <!-- BEGIN SIDEBAR MENU HEADER-->
         <div class="sidebar-header">
-            <img src="{{ asset('image/logo_white.png') }}" alt="logo" class="brand" data-src="{{ asset('image/logo_white.png') }}" data-src-retina="{{ asset('image/logo_white_2x.png') }}" width="78" height="22">
+            <img src="{{ asset('images/logo_white.png') }}" alt="logo" class="brand" data-src="{{ asset('images/logo_white.png') }}" data-src-retina="{{ asset('images/logo_white_2x.png') }}" width="78" height="22">
             <div class="sidebar-header-controls">
                 <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i></button>
                 <button type="button" class="btn btn-link hidden-sm-down" data-toggle-pin="sidebar"><i class="fa fs-12"></i></button>
