@@ -14086,3 +14086,441 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: visible;
   clip: auto;
 }
+
+/*------------------------------------------------------------------
+Pages Icons
+------------------------------------------------------------------ */
+@font-face {
+  font-family: 'pages-icon';
+  src: url("../fonts/pages-icon/Pages-icon.eot?-u69vo5");
+  src: url("../fonts/pages-icon/Pages-icon.eot?#iefix-u69vo5") format("embedded-opentype"), url("../fonts/pages-icon/Pages-icon.woff?-u69vo5") format("woff"), url("../fonts/pages-icon/Pages-icon.ttf?-u69vo5") format("truetype"), url("../fonts/pages-icon/Pages-icon.svg?-u69vo5#Pages-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pg {
+  display: inline-block;
+  font: normal normal normal 14px/1 pages-icon;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="pg-"], [class*=" pg-"] {
+  display: inline-block;
+  font: normal normal normal 14px/1 pages-icon;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pg-link:before {
+  content: "\E900";
+}
+
+.pg-menu:before {
+  content: "\E901";
+}
+
+.pg-alt_menu:before {
+  content: "\E902";
+}
+
+.pg-thumbs:before {
+  content: "\E903";
+}
+
+.pg-world:before {
+  content: "\E904";
+}
+
+.pg-boxnet:before {
+  content: "\E662";
+}
+
+.pg-signals:before {
+  content: "\E61C";
+}
+
+.pg-crop:before {
+  content: "\E657";
+}
+
+.pg-folder_alt:before {
+  content: "\E658";
+}
+
+.pg-folder:before {
+  content: "\E659";
+}
+
+.pg-theme:before {
+  content: "\E65A";
+}
+
+.pg-battery_empty:before {
+  content: "\E65B";
+}
+
+.pg-battery:before {
+  content: "\E65C";
+}
+
+.pg-note:before {
+  content: "\E65D";
+}
+
+.pg-server_hard:before {
+  content: "\E65E";
+}
+
+.pg-servers:before {
+  content: "\E65F";
+}
+
+.pg-menu_justify:before {
+  content: "\E660";
+}
+
+.pg-credit_card:before {
+  content: "\E60F";
+}
+
+.pg-fullscreen_restore:before {
+  content: "\E633";
+}
+
+.pg-fullscreen:before {
+  content: "\E634";
+}
+
+.pg-minus:before {
+  content: "\E635";
+}
+
+.pg-minus_circle:before {
+  content: "\E63A";
+}
+
+.pg-plus_circle:before {
+  content: "\E656";
+}
+
+.pg-refresh_new:before {
+  content: "\E600";
+}
+
+.pg-close_line:before {
+  content: "\E601";
+}
+
+.pg-close:before {
+  content: "\E60A";
+}
+
+.pg-arrow_down:before {
+  content: "\E60B";
+}
+
+.pg-arrow_left_line_alt:before {
+  content: "\E628";
+}
+
+.pg-arrow_left:before {
+  content: "\E629";
+}
+
+.pg-arrow_lright_line_alt:before {
+  content: "\E62A";
+}
+
+.pg-arrow_maximize_line:before {
+  content: "\E62B";
+}
+
+.pg-arrow_maximize:before {
+  content: "\E62C";
+}
+
+.pg-arrow_minimize_line:before {
+  content: "\E62F";
+}
+
+.pg-arrow_minimize:before {
+  content: "\E630";
+}
+
+.pg-arrow_right:before {
+  content: "\E631";
+}
+
+.pg-arrow_up:before {
+  content: "\E632";
+}
+
+.pg-more:before {
+  content: "\E655";
+}
+
+.pg-bag:before {
+  content: "\E602";
+}
+
+.pg-bag1:before {
+  content: "\E603";
+}
+
+.pg-bold:before {
+  content: "\E604";
+}
+
+.pg-calender:before {
+  content: "\E605";
+}
+
+.pg-camera:before {
+  content: "\E606";
+}
+
+.pg-centeralign:before {
+  content: "\E607";
+}
+
+.pg-charts:before {
+  content: "\E608";
+}
+
+.pg-clock:before {
+  content: "\E609";
+}
+
+.pg-comment:before {
+  content: "\E60C";
+}
+
+.pg-contact_book:before {
+  content: "\E60D";
+}
+
+.pg-credit_card_line:before {
+  content: "\E60E";
+}
+
+.pg-cupboard:before {
+  content: "\E610";
+}
+
+.pg-desktop:before {
+  content: "\E611";
+}
+
+.pg-download:before {
+  content: "\E612";
+}
+
+.pg-eraser:before {
+  content: "\E613";
+}
+
+.pg-extra:before {
+  content: "\E614";
+}
+
+.pg-form:before {
+  content: "\E615";
+}
+
+.pg-grid:before {
+  content: "\E616";
+}
+
+.pg-home:before {
+  content: "\E617";
+}
+
+.pg-image:before {
+  content: "\E618";
+}
+
+.pg-inbox:before {
+  content: "\E619";
+}
+
+.pg-indent:before {
+  content: "\E61A";
+}
+
+.pg-italic:before {
+  content: "\E61B";
+}
+
+.pg-laptop:before {
+  content: "\E61D";
+}
+
+.pg-layouts:before {
+  content: "\E61E";
+}
+
+.pg-layouts2:before {
+  content: "\E61F";
+}
+
+.pg-layouts3:before {
+  content: "\E620";
+}
+
+.pg-layouts4:before {
+  content: "\E621";
+}
+
+.pg-leftalign:before {
+  content: "\E622";
+}
+
+.pg-like:before {
+  content: "\E623";
+}
+
+.pg-like1:before {
+  content: "\E624";
+}
+
+.pg-lock:before {
+  content: "\E625";
+}
+
+.pg-mail:before {
+  content: "\E626";
+}
+
+.pg-map:before {
+  content: "\E627";
+}
+
+.pg-menu_lv:before {
+  content: "\E62D";
+}
+
+.pg-movie:before {
+  content: "\E636";
+}
+
+.pg-ordered_list:before {
+  content: "\E637";
+  color: #231f20;
+}
+
+.pg-outdent:before {
+  content: "\E638";
+}
+
+.pg-phone:before {
+  content: "\E639";
+}
+
+.pg-plus:before {
+  content: "\E63B";
+}
+
+.pg-power:before {
+  content: "\E63C";
+}
+
+.pg-printer:before {
+  content: "\E63D";
+}
+
+.pg-refresh:before {
+  content: "\E63E";
+}
+
+.pg-resize:before {
+  content: "\E63F";
+}
+
+.pg-right_align:before {
+  content: "\E640";
+}
+
+.pg-save:before {
+  content: "\E641";
+}
+
+.pg-search:before {
+  content: "\E642";
+}
+
+.pg-sent:before {
+  content: "\E643";
+}
+
+.pg-settings_small_1:before {
+  content: "\E644";
+}
+
+.pg-settings_small:before {
+  content: "\E645";
+}
+
+.pg-settings:before {
+  content: "\E646";
+}
+
+.pg-shopping_cart:before {
+  content: "\E647";
+}
+
+.pg-social:before {
+  content: "\E648";
+}
+
+.pg-spam:before {
+  content: "\E649";
+}
+
+.pg-suitcase:before {
+  content: "\E64A";
+}
+
+.pg-tables:before {
+  content: "\E64B";
+}
+
+.pg-tablet:before {
+  content: "\E64C";
+}
+
+.pg-telephone:before {
+  content: "\E64D";
+}
+
+.pg-text_style:before {
+  content: "\E64E";
+}
+
+.pg-trash_line:before {
+  content: "\E64F";
+}
+
+.pg-trash:before {
+  content: "\E650";
+}
+
+.pg-ui:before {
+  content: "\E651";
+}
+
+.pg-underline:before {
+  content: "\E652";
+}
+
+.pg-unordered_list:before {
+  content: "\E653";
+}
+
+.pg-video:before {
+  content: "\E654";
+}
