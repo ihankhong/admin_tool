@@ -14,7 +14,7 @@ module.exports = __webpack_require__(45);
 /***/ 15:
 /***/ (function(module, exports, __webpack_require__) {
 
-
+/* WEBPACK VAR INJECTION */(function($) {
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -22,6 +22,42 @@ module.exports = __webpack_require__(45);
  */
 
 __webpack_require__(16);
+
+function dataSearch() {
+    // Initializes search overlay plugin.
+    // Replace onSearchSubmit() and onKeyEnter() with 
+    // your logic to perform a search and display results
+    $('[data-pages="search"]').search({
+        searchField: '#overlay-search',
+        closeButton: '.overlay-close',
+        suggestions: '#overlay-suggestions',
+        brand: '.brand',
+        onSearchSubmit: function onSearchSubmit(searchString) {
+            console.log("Search for: " + searchString);
+        },
+        onKeyEnter: function onKeyEnter(searchString) {
+            console.log("Live search for: " + searchString);
+            var searchField = $('#overlay-search');
+            var searchResults = $('.search-results');
+            clearTimeout($.data(this, 'timer'));
+            searchResults.fadeOut("fast");
+            var wait = setTimeout(function () {
+                searchResults.find('.result-name').each(function () {
+                    if (searchField.val().length != 0) {
+                        $(this).html(searchField.val());
+                        searchResults.fadeIn("fast");
+                    }
+                });
+            }, 500);
+            $(this).data('timer', wait);
+        }
+    });
+}
+
+$(function () {
+    dataSearch();
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 
