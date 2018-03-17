@@ -95,7 +95,7 @@
             <!-- END MOBILE SIDEBAR TOGGLE -->
             <div class="">
                 <div class="brand inline">
-                    <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
+                    <img src="{{ asset('images/logo.png') }}" alt="logo" data-src="{{ asset('images/logo.png') }}" data-src-retina="{{ asset('images/logo_2x.png') }}" width="78" height="22">
                 </div>
                 <!-- START NOTIFICATION LIST -->
                 <ul class="hidden-md-down notification-list no-margin hidden-sm-down b-grey b-l b-r no-style p-l-30 p-r-20">
@@ -137,7 +137,7 @@
                                         <!-- START Notification Item-->
                                         <div class="notification-item clearfix">
                                             <div class="heading">
-                                                <a href="#" class="text-danger pull-left"><i class="fa fa-exclamation-triangle m-r-10"></i><span class="bold">98% Server Load</span><span class="fs-12 m-l-10">Take Action</span></a>
+                                                <a href="#" class="text-danger pull-left"><i class="fas fa-exclamation-triangle m-r-10"></i><span class="bold">98% Server Load</span><span class="fs-12 m-l-10">Take Action</span></a>
                                                 <span class="pull-right time">2 mins ago</span>
                                             </div>
                                             <!-- START Notification Item Right Side-->
@@ -150,7 +150,7 @@
                                         <!-- START Notification Item-->
                                         <div class="notification-item clearfix">
                                             <div class="heading">
-                                                <a href="#" class="text-warning-dark pull-left"><i class="fa fa-exclamation-triangle m-r-10"></i><span class="bold">Warning Notification</span><span class="fs-12 m-l-10">Buy Now</span></a>
+                                                <a href="#" class="text-warning-dark pull-left"><i class="fas fa-exclamation-triangle m-r-10"></i><span class="bold">Warning Notification</span><span class="fs-12 m-l-10">Buy Now</span></a>
                                                 <span class="pull-right time">yesterday</span>
                                             </div>
                                             <!-- START Notification Item Right Side-->
@@ -164,7 +164,7 @@
                                         <div class="notification-item unread clearfix">
                                             <div class="heading">
                                                 <div class="thumbnail-wrapper d24 circular b-white m-r-5 b-a b-white m-t-10 m-r-10">
-                                                    <img width="30" height="30" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" alt="" src="assets/img/profiles/1.jpg">
+                                                    <img width="30" height="30" data-src-retina="{{ asset('images/profiles/1x.jpg') }}" data-src="{{ asset('images/profiles/1.jpg') }}" alt="" src="{{ asset('images/profiles/1.jpg') }}">
                                                 </div>
                                                 <a href="#" class="text-complete pull-left"><span class="bold">Revox Design Labs</span><span class="fs-12 m-l-10">Owners</span></a>
                                                 <span class="pull-right time">11:00pm</span>
@@ -207,7 +207,7 @@
                 </div>
                 <div class="dropdown pull-right hidden-md-down">
                     <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="thumbnail-wrapper d32 circular inline"><img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32"></span>
+                        <span class="thumbnail-wrapper d32 circular inline"><img src="{{ asset('images/profiles/avatar.jpg') }}" alt="" data-src="{{ asset('images/profiles/avatar.jpg') }}" data-src-retina="{{ asset('images/profiles/avatar_small2x.jpg') }}" width="32" height="32"></span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
                         <a href="#" class="dropdown-item"><i class="pg-settings_small"></i> Settings</a>
