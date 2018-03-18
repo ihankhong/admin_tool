@@ -14,7 +14,7 @@ mix.webpackConfig({
     module: {
         rules: [
             {
-                test: require.resolve("./resources/assets/js/modernizr.custom.js"),
+                test: require.resolve("./resources/assets/js/plugins/modernizr.custom.js"),
                 use: "imports-loader?this=>window"
             }
         ]
@@ -23,18 +23,21 @@ mix.webpackConfig({
 
 mix.js('resources/assets/js/app.js', 'public/js/app.js')
    .js('resources/assets/js/pages.js', 'public/js/pages.js')
-   .js('resources/assets/js/modernizr.custom.js', 'public/js/modernizr.custom.js')
-   .extract(['lodash', 'jquery', 'axios', 'alertifyjs', 'popper.js', 'jquery.scrollbar'], 'public/js/vendor.js')
+   .extract(['lodash', 'jquery', 'axios', 'alertifyjs', 'popper.js', 'jquery.scrollbar', 'jquery-ui'], 'public/js/vendor.js')
    .autoload({
     jquery: ['$', 'jQuery', 'window.jQuery']
   });
 
+// plugins
+mix.js('resources/assets/js/plugins/modernizr.custom.js', 'public/js');
+
 mix.sass('resources/assets/sass/app.scss', 'public/css/app.css')
-   .sass('resources/assets/sass/vendor.scss', 'public/css/vendor.css');
+   .sass('resources/assets/sass/vendor.scss', 'public/css/vendor.css')
+   .sass('resources/assets/sass/jquery-ui.scss', 'public/css');
 mix.sass('resources/assets/sass/pages/pages.scss', 'public/css')
    .options({
-    processCssUrls: false
-  });
+        processCssUrls: false
+   });
 
 if (mix.inProduction()) {
     mix.version();

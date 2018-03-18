@@ -61,3 +61,16 @@ window.alertify.defaults.glossary.cancel = '取消';
  * https://github.com/gromo/jquery.scrollbar
  */
 require('jquery.scrollbar');
+
+/*
+ * https://github.com/jquery/jquery-ui
+ * 
+ * ===================================
+ * Other Url:
+ *   1.https://stackoverflow.com/questions/33998262/jquery-ui-and-webpack-how-to-manage-it-into-module
+ *   2.https://github.com/JeffreyWay/laravel-mix/blob/master/docs/jquery-ui.md
+ *   3.https://github.com/jzaefferer/webpack-jquery-ui
+ * ===================================
+ */
+// window.autocomplete = require("jquery-ui/ui/widgets/autocomplete");
+require('jquery-ui');

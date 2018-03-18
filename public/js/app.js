@@ -1,17 +1,18 @@
 webpackJsonp([1],{
 
-/***/ 14:
+/***/ 15:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(15);
-__webpack_require__(43);
-__webpack_require__(44);
-module.exports = __webpack_require__(45);
+__webpack_require__(16);
+__webpack_require__(45);
+__webpack_require__(46);
+__webpack_require__(47);
+module.exports = __webpack_require__(48);
 
 
 /***/ }),
 
-/***/ 15:
+/***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {
@@ -21,7 +22,7 @@ module.exports = __webpack_require__(45);
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(16);
+__webpack_require__(17);
 
 function dataSearch() {
     // Initializes search overlay plugin.
@@ -61,7 +62,7 @@ $(function () {
 
 /***/ }),
 
-/***/ 16:
+/***/ 17:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {
@@ -77,7 +78,7 @@ try {
   window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__(1);
   window.Popper = __webpack_require__(2);
 
-  __webpack_require__(18);
+  __webpack_require__(19);
 } catch (e) {}
 
 /**
@@ -107,10 +108,10 @@ if (token) {
 /**
  * Font Awesome
  */
-__webpack_require__(38);
 __webpack_require__(39);
 __webpack_require__(40);
 __webpack_require__(41);
+__webpack_require__(42);
 
 /**
  * https://github.com/MohammadYounes/AlertifyJS
@@ -127,11 +128,24 @@ window.alertify.defaults.glossary.cancel = '取消';
  * https://github.com/gromo/jquery.scrollbar
  */
 __webpack_require__(13);
+
+/*
+ * https://github.com/jquery/jquery-ui
+ * 
+ * ===================================
+ * Other Url:
+ *   1.https://stackoverflow.com/questions/33998262/jquery-ui-and-webpack-how-to-manage-it-into-module
+ *   2.https://github.com/JeffreyWay/laravel-mix/blob/master/docs/jquery-ui.md
+ *   3.https://github.com/jzaefferer/webpack-jquery-ui
+ * ===================================
+ */
+// window.autocomplete = require("jquery-ui/ui/widgets/autocomplete");
+__webpack_require__(14);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 
-/***/ 18:
+/***/ 19:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -4032,7 +4046,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 /***/ }),
 
-/***/ 38:
+/***/ 39:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5855,7 +5869,7 @@ var config = api$1.config;
 
 /***/ }),
 
-/***/ 39:
+/***/ 40:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7487,7 +7501,7 @@ bunker(function () {
 
 /***/ }),
 
-/***/ 40:
+/***/ 41:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7967,7 +7981,7 @@ bunker(function () {
 
 /***/ }),
 
-/***/ 41:
+/***/ 42:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9089,25 +9103,32 @@ bunker(function () {
 
 /***/ }),
 
-/***/ 43:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 44:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ 45:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 46:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 47:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 48:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
 
-},[14]);
+},[15]);

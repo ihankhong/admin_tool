@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="{{ mix('css/vendor.css') }}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" href="{{ mix('css/pages.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/jquery-ui.css') }}">
 </head>
 <body class="fixed-header">
     <!-- BEGIN SIDEBAR -->
