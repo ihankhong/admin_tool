@@ -24,9 +24,10 @@
     <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
 
     <link rel="stylesheet" href="{{ mix('css/vendor.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/pages.css') }}">
     <link rel="stylesheet" href="{{ mix('css/jquery-ui.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/pages.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    @yield('style')
 </head>
 <body class="fixed-header">
     <!-- BEGIN SIDEBAR -->
@@ -74,7 +75,7 @@
     <!-- START OVERLAY SEARCH -->
     @include('layout/search')
     <!-- END OVERLAY SEARCH -->
-    
+
     <!-- BEGIN VENDOR JS -->
     <script type="text/javascript" src="{{ mix('js/modernizr.custom.js') }}"></script>
     <!-- END VENDOR JS -->

@@ -64,7 +64,7 @@ require('jquery.scrollbar');
 
 /*
  * https://github.com/jquery/jquery-ui
- * 
+ *
  * ===================================
  * Other Url:
  *   1.https://stackoverflow.com/questions/33998262/jquery-ui-and-webpack-how-to-manage-it-into-module
@@ -72,5 +72,4 @@ require('jquery.scrollbar');
  *   3.https://github.com/jzaefferer/webpack-jquery-ui
  * ===================================
  */
-// window.autocomplete = require("jquery-ui/ui/widgets/autocomplete");
 require('jquery-ui');

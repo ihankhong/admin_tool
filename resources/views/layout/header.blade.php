@@ -1,7 +1,7 @@
 <!-- START HEADER -->
 <div class="header">
     <!-- START MOBILE SIDEBAR TOGGLE -->
-    <a href="#" class="btn-link toggle-sidebar hidden-lg-up pg pg-menu" data-toggle="sidebar"></a>
+    <a href="#" class="btn-link toggle-sidebar d-lg-none pg pg-menu" data-toggle="sidebar"></a>
     <!-- END MOBILE SIDEBAR TOGGLE -->
     <div class="">
         <div class="brand inline">
