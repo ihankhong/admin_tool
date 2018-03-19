@@ -78,6 +78,7 @@
 
     <!-- BEGIN VENDOR JS -->
     <script type="text/javascript" src="{{ mix('js/modernizr.custom.js') }}"></script>
+    <script type="text/javascript" src="{{ mix('js/jquery.ioslist.min.js') }}"></script>
     <!-- END VENDOR JS -->
     <!-- BEGIN CORE TEMPLATE JS -->
     <script type="text/javascript" src="{{ mix('js/pages.js') }}"></script>

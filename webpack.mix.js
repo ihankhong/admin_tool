@@ -16,6 +16,10 @@ mix.webpackConfig({
             {
                 test: require.resolve("./resources/assets/js/plugins/modernizr.custom.js"),
                 use: "imports-loader?this=>window"
+            },
+            {
+                test: require.resolve("./resources/assets/js/plugins/jquery.ioslist.min.js"),
+                use: "imports-loader?this=>window"
             }
         ]
     }
@@ -23,13 +27,25 @@ mix.webpackConfig({
 
 mix.js('resources/assets/js/app.js', 'public/js/app.js')
    .js('resources/assets/js/pages.js', 'public/js/pages.js')
-   .extract(['lodash', 'jquery', 'axios', 'alertifyjs', 'popper.js', 'jquery.scrollbar', 'jquery-ui'], 'public/js/vendor.js')
+   .extract([
+        'lodash', 
+        'jquery', 
+        'axios', 
+        'alertifyjs', 
+        'popper.js', 
+        'jquery.scrollbar', 
+        'jquery-ui'
+    ], 'public/js/vendor.js')
    .autoload({
-    jquery: ['$', 'jQuery', 'window.jQuery']
-  });
+        jquery: ['$', 'jQuery', 'window.jQuery']
+    });
 
 // plugins
 mix.js('resources/assets/js/plugins/modernizr.custom.js', 'public/js');
+/**
+ * https://github.com/brianhadaway/iOSList
+ */
+mix.js('resources/assets/js/plugins/jquery.ioslist.min.js', 'public/js');
 
 mix.sass('resources/assets/sass/app.scss', 'public/css/app.css')
    .sass('resources/assets/sass/vendor.scss', 'public/css/vendor.css')
