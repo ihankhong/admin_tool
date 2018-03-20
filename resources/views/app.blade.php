@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="{{ mix('css/vendor.css') }}">
     <link rel="stylesheet" href="{{ mix('css/jquery-ui.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/pages.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/pages.css') }}" class="main-stylesheet">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @yield('style')
 </head>
