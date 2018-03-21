@@ -46,31 +46,27 @@
         <!-- START Login Right Container-->
         <div class="login-container bg-white">
             <div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
-                <img src="{{ asset('images/logo_2x.png') }}" alt="logo" data-src="{{ asset('images/logo_2x.png') }}" data-src-retina="{{ asset('images/logo_2x.png') }}" width="78" height="22">
+                <img src="{{ asset('images/logo_2x.png') }}" class="img-fluid" alt="logo" data-src="{{ asset('images/logo_2x.png') }}" data-src-retina="{{ asset('images/logo_2x.png') }}" width="120">
                 <p class="p-t-35">Sign into your pages account</p>
                 <!-- START Login Form -->
-                <form id="form-login" class="p-t-15" role="form" action="index.html">
+                {!! Form::open(['class' => 'p-t-15', 'id' => 'form-login', 'role' => 'form']) !!}
                     <!-- START Form Control-->
                     <div class="form-group form-group-default">
-                        <label>Login</label>
-                        <div class="controls">
-                            <input type="text" name="username" placeholder="User Name" class="form-control" required>
-                        </div>
+                        {!! Form::label('username', null, ['class' => 'control-label']) !!}
+                        {!! Form::text('username', null, ['class' => 'form-control', 'placeholder' => 'User Name', 'required' => 'required']) !!}
                     </div>
                     <!-- END Form Control-->
                     <!-- START Form Control-->
                     <div class="form-group form-group-default">
-                        <label>Password</label>
-                        <div class="controls">
-                            <input type="password" class="form-control" name="password" placeholder="Credentials" required>
-                        </div>
+                        {!! Form::label('password', null, ['class' => 'control-label']) !!}
+                        {!! Form::password('password', ['class' => 'form-control', 'placeholder' => 'Credentials', 'required' => 'required']) !!}
                     </div>
                     <!-- START Form Control-->
                     <div class="row">
                         <div class="col-md-6 no-padding sm-p-l-10">
-                            <div class="checkbox ">
-                                <input type="checkbox" value="1" id="checkbox1">
-                                <label for="checkbox1">Keep Me Signed in</label>
+                            <div class="checkbox">
+                                {!! Form::checkbox('checkbox1', 1, null) !!}
+                                {!! Form::label('checkbox1', 'Keep Me Signed in', ['class' => 'control-label']) !!}
                             </div>
                         </div>
                         <div class="col-md-6 d-flex align-items-center justify-content-end">
@@ -79,7 +75,7 @@
                     </div>
                     <!-- END Form Control-->
                     <button class="btn btn-primary btn-cons m-t-10" type="submit">Sign in</button>
-                </form>
+                {!! Form::close() !!}
                 <!--END Login Form-->
                 <div class="pull-bottom sm-pull-bottom">
                     <div class="m-b-30 p-r-80 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix">
