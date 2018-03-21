@@ -1,18 +1,18 @@
 webpackJsonp([1],{
 
-/***/ 15:
+/***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(16);
-__webpack_require__(45);
+__webpack_require__(17);
 __webpack_require__(46);
 __webpack_require__(47);
-module.exports = __webpack_require__(48);
+__webpack_require__(48);
+module.exports = __webpack_require__(49);
 
 
 /***/ }),
 
-/***/ 16:
+/***/ 17:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {
@@ -22,7 +22,7 @@ module.exports = __webpack_require__(48);
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(17);
+__webpack_require__(18);
 
 function dataSearch() {
     // Initializes search overlay plugin.
@@ -62,7 +62,7 @@ $(function () {
 
 /***/ }),
 
-/***/ 17:
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {
@@ -78,7 +78,7 @@ try {
   window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__(1);
   window.Popper = __webpack_require__(2);
 
-  __webpack_require__(19);
+  __webpack_require__(20);
 } catch (e) {}
 
 /**
@@ -108,10 +108,10 @@ if (token) {
 /**
  * Font Awesome
  */
-__webpack_require__(39);
 __webpack_require__(40);
 __webpack_require__(41);
 __webpack_require__(42);
+__webpack_require__(43);
 
 /**
  * https://github.com/MohammadYounes/AlertifyJS
@@ -140,11 +140,16 @@ __webpack_require__(13);
  * ===================================
  */
 __webpack_require__(14);
+
+/**
+ * https://github.com/jquery-validation/jquery-validation
+ */
+__webpack_require__(15);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 
-/***/ 19:
+/***/ 20:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -4045,7 +4050,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 /***/ }),
 
-/***/ 39:
+/***/ 40:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5868,7 +5873,7 @@ var config = api$1.config;
 
 /***/ }),
 
-/***/ 40:
+/***/ 41:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7500,7 +7505,7 @@ bunker(function () {
 
 /***/ }),
 
-/***/ 41:
+/***/ 42:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7980,7 +7985,7 @@ bunker(function () {
 
 /***/ }),
 
-/***/ 42:
+/***/ 43:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9102,13 +9107,6 @@ bunker(function () {
 
 /***/ }),
 
-/***/ 45:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ 46:
 /***/ (function(module, exports) {
 
@@ -9128,6 +9126,13 @@ bunker(function () {
 
 // removed by extract-text-webpack-plugin
 
+/***/ }),
+
+/***/ 49:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
 /***/ })
 
-},[15]);
+},[16]);

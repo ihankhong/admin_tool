@@ -73,3 +73,8 @@ require('jquery.scrollbar');
  * ===================================
  */
 require('jquery-ui');
+
+/**
+ * https://github.com/jquery-validation/jquery-validation
+ */
+require('jquery-validation');

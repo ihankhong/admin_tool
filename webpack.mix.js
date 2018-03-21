@@ -28,13 +28,14 @@ mix.webpackConfig({
 mix.js('resources/assets/js/app.js', 'public/js/app.js')
    .js('resources/assets/js/pages.js', 'public/js/pages.js')
    .extract([
-        'lodash', 
-        'jquery', 
-        'axios', 
-        'alertifyjs', 
-        'popper.js', 
-        'jquery.scrollbar', 
-        'jquery-ui'
+        'lodash',
+        'jquery',
+        'axios',
+        'alertifyjs',
+        'popper.js',
+        'jquery.scrollbar',
+        'jquery-ui',
+        'jquery-validation'
     ], 'public/js/vendor.js')
    .autoload({
         jquery: ['$', 'jQuery', 'window.jQuery']

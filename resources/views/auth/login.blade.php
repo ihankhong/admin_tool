@@ -49,7 +49,7 @@
                 <img src="{{ asset('images/logo_2x.png') }}" class="img-fluid" alt="logo" data-src="{{ asset('images/logo_2x.png') }}" data-src-retina="{{ asset('images/logo_2x.png') }}" width="120">
                 <p class="p-t-35">Sign into your pages account</p>
                 <!-- START Login Form -->
-                {!! Form::open(['class' => 'p-t-15', 'id' => 'form-login', 'role' => 'form']) !!}
+                {!! Form::open(['method' => 'POST', 'class' => 'p-t-15', 'id' => 'form-login', 'role' => 'form']) !!}
                     <!-- START Form Control-->
                     <div class="form-group form-group-default">
                         {!! Form::label('username', null, ['class' => 'control-label']) !!}
@@ -101,5 +101,10 @@
     <!-- BEGIN CORE TEMPLATE JS -->
     <script type="text/javascript" src="{{ mix('js/pages.js') }}"></script>
     <!-- END CORE TEMPLATE JS -->
+    <script>
+    $(function() {
+        $('#form-login').validate()
+    })
+    </script>
 </body>
 </html>
