@@ -73,7 +73,7 @@
                         </div>
                         <div class="col-md-6 d-flex align-items-center justify-content-end">
                             <div class="form-group">
-                                <a href="#" class="btn btn-link text-info small">Forgot Your Password?</a>
+                                <a href="{{ route('password.request') }}" class="btn btn-link text-info small">Forgot Your Password?</a>
                             </div>
                         </div>
                     </div>
