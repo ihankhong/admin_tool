@@ -83,7 +83,7 @@
                 <!--END Login Form-->
                 {{-- START Login Errors --}}
                 @if (count($errors) > 0)
-                    <div class="alert alert-danger">
+                    <div class="alert alert-danger m-t-20">
                         <ul>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
