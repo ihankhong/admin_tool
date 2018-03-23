@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -38,13 +38,12 @@ class LoginController extends Controller
     }
 
     /**
-     * Show the application's login form.
+     * Get the login username to be used by the controller.
      *
-     * @return \Illuminate\Http\Response
+     * @return string
      */
-    public function showLoginForm()
+    protected function username()
     {
-        return view('auth.login');
+        return 'username';
     }
-
 }

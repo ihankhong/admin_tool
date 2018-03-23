@@ -40,7 +40,9 @@
                 <a href="#" class="dropdown-item"><i class="pg-settings_small"></i> Settings</a>
                 <a href="#" class="dropdown-item"><i class="pg-outdent"></i> Feedback</a>
                 <a href="#" class="dropdown-item"><i class="pg-signals"></i> Help</a>
-                <a href="#" class="clearfix bg-master-lighter dropdown-item"><span class="pull-left">Logout</span><span class="pull-right"><i class="pg-power"></i></span></a>
+                <a href="{{ route('logout') }}" class="clearfix bg-master-lighter dropdown-item" onclick="event.preventDefault();$('#logout-form').submit();"><span class="pull-left">Logout</span><span class="pull-right"><i class="pg-power"></i></span></a>
+                {!! Form::open(['route' => 'logout', 'id' => 'logout-form', 'class' => 'hidden']) !!}
+                {!! Form::close() !!}
             </div>
         </div>
         <!-- END User Info-->

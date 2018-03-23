@@ -49,7 +49,7 @@
                 <img src="{{ asset('images/logo_2x.png') }}" class="img-fluid" alt="logo" data-src="{{ asset('images/logo_2x.png') }}" data-src-retina="{{ asset('images/logo_2x.png') }}" width="120">
                 <p class="p-t-35">Sign into your pages account</p>
                 <!-- START Login Form -->
-                {!! Form::open(['method' => 'POST', 'class' => 'p-t-15', 'id' => 'form-login', 'role' => 'form']) !!}
+                {!! Form::open(['class' => 'p-t-15', 'id' => 'form-login', 'role' => 'form']) !!}
                     <!-- START Form Control-->
                     <div class="form-group form-group-default">
                         {!! Form::label('username', null, ['class' => 'control-label']) !!}
@@ -64,13 +64,17 @@
                     <!-- START Form Control-->
                     <div class="row">
                         <div class="col-md-6 no-padding sm-p-l-10">
-                            <div class="checkbox">
-                                {!! Form::checkbox('checkbox1', 1, null) !!}
-                                {!! Form::label('checkbox1', 'Keep Me Signed in', ['class' => 'control-label']) !!}
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    {!! Form::checkbox('remember', 1, null, ['id' => 'remember']) !!}
+                                    {!! Form::label('remember', 'Remember Me', ['class' => 'control-label']) !!}
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6 d-flex align-items-center justify-content-end">
-                            <a href="#" class="text-info small">Help? Contact Support</a>
+                            <div class="form-group">
+                                <a href="#" class="btn btn-link text-info small">Forgot Your Password?</a>
+                            </div>
                         </div>
                     </div>
                     <!-- END Form Control-->
