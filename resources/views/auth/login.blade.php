@@ -81,6 +81,17 @@
                     <button class="btn btn-primary btn-cons m-t-10" type="submit">Sign in</button>
                 {!! Form::close() !!}
                 <!--END Login Form-->
+                {{-- START Login Errors --}}
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                {{-- END Login Errors --}}
                 <div class="pull-bottom sm-pull-bottom">
                     <div class="m-b-30 p-r-80 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix">
                         <div class="col-sm-3 col-md-2 no-padding">

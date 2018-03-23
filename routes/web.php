@@ -11,17 +11,7 @@
 |
 */
 
-// Route::middleware('guest')->group(function () {
-//     Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
-//     Route::post('login', 'LoginController@login');
-// });
-
-
-
-
 Auth::routes();
-
-// Route::get('/home', 'HomeController@index')->name('home');
 
 Route::middleware('auth')->group(function () {
     Route::get('/', function () {
