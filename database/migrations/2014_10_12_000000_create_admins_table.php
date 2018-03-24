@@ -18,6 +18,7 @@ class CreateAdminsTable extends Migration
             $table->string('username')->unique()->comment('帳號');
             $table->string('password')->comment('密碼');
             $table->string('nickname')->comment('暱稱');
+            $table->string('email')->comment('電子信箱');
             $table->tinyInteger('status')->unsigned()->comment('狀態：AdminStatus');
             $table->rememberToken();
             $table->timestamps();

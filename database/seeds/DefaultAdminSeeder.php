@@ -16,6 +16,7 @@ class DefaultAdminSeeder extends Seeder
             'username' => 'root',
             'password' => bcrypt('hot7Gb'),
             'nickname' => 'Root',
+            'email'    => 'hank790315@gmail.com',
             'status'   => AdminStatus::ACTIVE,
         ]);
     }

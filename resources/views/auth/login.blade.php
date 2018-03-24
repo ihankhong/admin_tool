@@ -61,7 +61,7 @@
                         {!! Form::label('password', null, ['class' => 'control-label']) !!}
                         {!! Form::password('password', ['class' => 'form-control', 'placeholder' => 'Credentials', 'required' => 'required']) !!}
                     </div>
-                    <!-- START Form Control-->
+                    <!-- END Form Control-->
                     <div class="row">
                         <div class="col-md-6 no-padding sm-p-l-10">
                             <div class="form-group">
@@ -77,7 +77,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- END Form Control-->
                     <button class="btn btn-primary btn-cons m-t-10" type="submit">Sign in</button>
                 {!! Form::close() !!}
                 <!--END Login Form-->
