@@ -17,7 +17,7 @@ class Admin extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'username', 'password', 'nickname', 'status',
+        'username', 'password', 'email', 'nickname', 'status',
     ];
 
     /**
@@ -29,3 +29,5 @@ class Admin extends Authenticatable
         'password', 'remember_token',
     ];
 }
+
+// https://laracasts.com/discuss/channels/laravel/how-to-override-message-in-sendresetlinkemail-in-forgotpasswordcontroller
