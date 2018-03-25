@@ -61,7 +61,7 @@
                 <!-- END Forgot Password Form -->
                 {{-- START Forgot Password Status --}}
                 @if (session('status'))
-                    <div class="alert alert-success">
+                    <div class="alert alert-success m-t-20">
                         {{ session('status') }}
                     </div>
                 @endif
