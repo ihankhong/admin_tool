@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Notifications\Notifiable;
+use App\Notifications\MyOwnResetPassword as ResetPasswordNotification;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 class Admin extends Authenticatable
 {
@@ -28,6 +29,18 @@ class Admin extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-}
 
-// https://laracasts.com/discuss/channels/laravel/how-to-override-message-in-sendresetlinkemail-in-forgotpasswordcontroller
+    /**
+     * Send the password reset notification.
+     *
+     * Teaching: https://laracasts.com/discuss/channels/laravel/how-to-override-message-in-sendresetlinkemail-in-forgotpasswordcontroller
+     * Video: https://laracasts.com/series/whats-new-in-laravel-5-3/episodes/9
+     *
+     * @param  string  $token
+     * @return void
+     */
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new ResetPasswordNotification($token));
+    }
+}
