@@ -17,6 +17,7 @@
             <!-- START Form Control-->
             <div class="form-group form-group-default{{ $errors->has('password') ? ' has-error' : '' }}">
                 {!! Form::label('password', null, ['class' => 'control-label']) !!}
+                <p class="help-block">请输入长度 6~30 的任意字元。</p>
                 {!! Form::password('password', ['class' => 'form-control', 'placeholder' => 'Password', 'required' => 'required']) !!}
                 {!! $errors->first('password', '<p class="help-block">:message</p>') !!}
             </div>
