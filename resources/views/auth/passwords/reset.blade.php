@@ -11,24 +11,22 @@
             <div class="form-group form-group-default{{ $errors->has('email') ? ' has-error' : '' }}">
                 {!! Form::label('email', 'E-Mail Address', ['class' => 'control-label']) !!}
                 {!! Form::email('email', $email or old('email'), ['class' => 'form-control', 'placeholder' => 'E-Mail', 'required' => 'required', 'autofocus' => 'autofocus']) !!}
-                {!! $errors->first('email', '<p class="help">:message</p>') !!}
+                {!! $errors->first('email', '<p class="error">:message</p>') !!}
             </div>
             <!-- END Form Control-->
             <!-- START Form Control-->
             <div class="form-group form-group-default{{ $errors->has('password') ? ' has-error' : '' }}">
                 {!! Form::label('password', null, ['class' => 'control-label']) !!}
-                <p class="help">請輸入長度 6~30 的任意字元。</p>
-                {!! Form::password('password', ['class' => 'form-control', 'placeholder' => 'Password', 'required' => 'required']) !!}
-                {!! $errors->first('password', '<p class="help">:message</p>') !!}
+                {!! Form::password('password', ['class' => 'form-control', 'placeholder' => '請輸入長度 6~30 的任意字元。', 'required' => 'required']) !!}
             </div>
+            {!! $errors->first('password', '<p class="error">:message</p>') !!}
             <!-- END Form Control-->
             <!-- START Form Control-->
             <div class="form-group form-group-default{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
                 {!! Form::label('password_confirmation', 'Confirm Password', ['class' => 'control-label']) !!}
-                <p class="help">請確認您的密碼。</p>
-                {!! Form::password('password_confirmation', ['class' => 'form-control', 'placeholder' => 'Confirm', 'required' => 'required']) !!}
-                {!! $errors->first('password_confirmation', '<p class="help">:message</p>') !!}
+                {!! Form::password('password_confirmation', ['class' => 'form-control', 'placeholder' => '請確認您的密碼。', 'required' => 'required']) !!}
             </div>
+            {!! $errors->first('password_confirmation', '<p class="error">:message</p>') !!}
             <!-- END Form Control-->
             <button class="btn btn-primary btn-cons m-t-10" type="submit">Reset Password</button>
         {!! Form::close() !!}
