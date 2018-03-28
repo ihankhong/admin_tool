@@ -33,7 +33,11 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn-primary btn-cons m-t-10" type="submit">Sign in</button>
+            <div class="btns">
+                <button class="btn btn-primary btn-cons btn-block m-t-10" type="submit">Sign in</button>
+                <p>沒有帳號?<a href="#">註冊會員</a></p>
+            </div>
+
         {!! Form::close() !!}
         <!--END Login Form-->
         {{-- START Login Errors --}}
