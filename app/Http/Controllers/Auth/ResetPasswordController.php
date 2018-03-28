@@ -45,19 +45,9 @@ class ResetPasswordController extends Controller
     protected function rules()
     {
         return [
-            'token'    => 'required',
-            'email'    => ['required', 'email'],
+            'token' => 'required',
+            'email' => ['required', 'email'],
             'password' => ['required', 'confirmed', 'between:6,30'],
         ];
-    }
-
-    /**
-     * Get the password reset validation error messages.
-     *
-     * @return array
-     */
-    protected function validationErrorMessages()
-    {
-        return [];
     }
 }
