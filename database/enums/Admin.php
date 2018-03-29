@@ -2,7 +2,7 @@
 
 abstract class AdminStatus extends BaseEnum
 {
-    const DELETE  = 0; // 刪除
+    const DISABLE = 0; // 停用
     const ACTIVE  = 1; // 啟用
-    const DISABLE = 2; // 停用
+    const DELETE  = 2; // 刪除
 }

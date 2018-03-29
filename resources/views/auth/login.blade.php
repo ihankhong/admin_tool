@@ -33,11 +33,8 @@
                     </div>
                 </div>
             </div>
-            <div class="btns">
-                <button class="btn btn-primary btn-cons btn-block m-t-10" type="submit">Sign in</button>
-                <p>沒有帳號?<a href="#">註冊會員</a></p>
-            </div>
-
+            <button class="btn btn-primary btn-cons btn-block m-t-10" type="submit">Sign in</button>
+            <p class="m-t-10">沒有帳號?&nbsp;<a href="{{ route('register') }}" class="bold">註冊會員</a></p>
         {!! Form::close() !!}
         <!--END Login Form-->
         {{-- START Login Errors --}}
