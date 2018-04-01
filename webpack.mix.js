@@ -49,12 +49,14 @@ mix.js('resources/assets/js/plugins/modernizr.custom.js', 'public/js');
 mix.js('resources/assets/js/plugins/jquery.ioslist.min.js', 'public/js');
 
 mix.sass('resources/assets/sass/app.scss', 'public/css/app.css')
-   .sass('resources/assets/sass/vendor.scss', 'public/css/vendor.css')
-   .sass('resources/assets/sass/jquery-ui.scss', 'public/css');
+   .sass('resources/assets/sass/vendor.scss', 'public/css/vendor.css');
 mix.sass('resources/assets/sass/pages/pages.scss', 'public/css')
    .options({
         processCssUrls: false
    });
+
+// plugins
+mix.sass('resources/assets/sass/jquery-ui.scss', 'public/css');
 
 if (mix.inProduction()) {
     mix.version();
