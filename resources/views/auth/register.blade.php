@@ -29,8 +29,8 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body class="fixed-header">
-    <div class="register-container full-height sm-p-t-30">
-        <div class="d-flex justify-content-center flex-column full-height">
+    <div class="register-container m-t-30 sm-p-t-30">
+        <div class="d-flex justify-content-center flex-column">
             <img src="{{ asset('images/logo_2x.png') }}" class="img-fluid" alt="logo" data-src="{{ asset('images/logo_2x.png') }}" data-src-retina="{{ asset('images/logo_2x.png') }}" width="120">
             <h3>Pages makes it easy to enjoy what matters the most in your life</h3>
             <p>Create a pages account. If you have a facebook account, log into it for this process. Sign in with <a href="#" class="text-info">Facebook</a> or <a href="#" class="text-info">Google</a></p>
@@ -76,10 +76,9 @@
                 </div>
                 <button class="btn btn-primary btn-cons btn-block m-t-10" type="submit">Create a new account</button>
             {!! Form::close() !!}
-            <form id="form-register" class="p-t-15" role="form" action="index.html">
         </div>
     </div>
-    <div class=" full-width">
+    <div class=" full-width m-t-20">
         <div class="register-container m-b-10 clearfix">
             <div class="m-b-30 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix d-flex-md-up">
                 <div class="col-md-2 no-padding d-flex align-items-center">
